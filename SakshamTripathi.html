@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway AI Chatbot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">🚆 RailAI</div>
+        <button id="chatBtn" class="launch-btn">Launch Chatbot</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Railway Assistant</h1>
+            <p>
+                Intelligent passenger support system powered by IBM Watson Assistant.
+                Available 24/7 for seamless railway assistance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="card">
+            <h3>Smart Assistance</h3>
+            <p>Handles passenger queries intelligently.</p>
+        </div>
+        <div class="card">
+            <h3>Fast Response</h3>
+            <p>Real-time automated support system.</p>
+        </div>
+        <div class="card">
+            <h3>Scalable System</h3>
+            <p>Designed for high passenger volume.</p>
+        </div>
+    </section>
+
+    <!-- Verification Modal -->
+    <div id="verificationModal" class="modal">
+        <div class="modal-content">
+            <h2>Passenger Verification</h2>
+            <form id="verificationForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="ticket" placeholder="Ticket / Reference Number" required>
+                <button type="submit">Verify & Start Chat</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

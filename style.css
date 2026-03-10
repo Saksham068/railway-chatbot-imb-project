@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.launch-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00e0ff, #00ffa3);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.launch-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 8%;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 260px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #00e0ff;
+    cursor: pointer;
+}
